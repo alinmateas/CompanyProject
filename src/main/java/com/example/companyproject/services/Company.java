@@ -10,6 +10,7 @@ public class Company {
 
     public CompanyDto toDto(){
         CompanyDto dto = new CompanyDto();
+        int y = 3;
         dto.setName(name);
         return dto;
     }
