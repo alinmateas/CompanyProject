@@ -1,6 +1,6 @@
-package com.example.companyproject.dao;
+package com.example.companyproject.services;
 
-import com.example.companyproject.services.CompanyDTO;
+import com.example.companyproject.services.CompanyDto;
 import lombok.Data;
 
 @Data
@@ -8,13 +8,13 @@ public class Company {
     private String name;
     private String data;
 
-    public CompanyDTO toDto(){
-        CompanyDTO dto = new CompanyDTO();
+    public CompanyDto toDto(){
+        CompanyDto dto = new CompanyDto();
         dto.setName(name);
         return dto;
     }
 
-    public Company update(CompanyDTO dto){
+    public Company update(CompanyDto dto){
         this.name = dto.getName();
         return this;
     }

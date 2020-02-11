@@ -1,12 +1,10 @@
-package com.example.companyproject.controllers;
+package com.example.companyproject.dao;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
-import com.example.companyproject.dao.Company;
+import com.example.companyproject.services.Company;
 import lombok.Data;
-
-import java.util.Objects;
 
 @Data
 @Entity
