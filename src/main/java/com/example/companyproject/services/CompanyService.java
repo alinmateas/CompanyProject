@@ -25,6 +25,11 @@ public class CompanyService {
         return companyRepository.save(newCompany).toPojo();
     }
 
+    public Company updateCompany(String existingName, Company company) {
+        CompanyEntity saved = companyRepository.findCompanyEntityByName(existingName).orElseThrow(() -> new CompanyNotFoundException(company.getName()));
+        saved.update(company);
+        return companyRepository.save(saved).toPojo();
+    }
 
 
     public void deleteByName(String name) {

@@ -26,6 +26,11 @@ public class CompanyController {
         return companyService.addCompany(company).toDto();
     }
 
+    @PutMapping("/{existingName}")
+    public CompanyDto updateCompany(@PathVariable("existingName") String existingName, @RequestBody Company company) {
+        return companyService.updateCompany(existingName, company).toDto();
+    }
+
     @GetMapping(path = "/")
     public List<CompanyDto> getCompanies() {
         return companyService.getCompanies().stream().map(Company::toDto).collect(Collectors.toList());
