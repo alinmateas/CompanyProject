@@ -1,14 +1,14 @@
 package com.example.companyproject.controllers;
 
-import com.example.companyproject.services.Company;
-import com.example.companyproject.services.CompanyDto;
-import com.example.companyproject.services.CompanyService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+        import com.example.companyproject.services.Company;
+        import com.example.companyproject.services.CompanyDto;
+        import com.example.companyproject.services.CompanyService;
+        import org.springframework.beans.factory.annotation.Autowired;
+        import org.springframework.web.bind.annotation.*;
 
-import javax.transaction.Transactional;
-import java.util.List;
-import java.util.stream.Collectors;
+        import javax.transaction.Transactional;
+        import java.util.List;
+        import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/company")

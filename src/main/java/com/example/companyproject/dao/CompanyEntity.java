@@ -1,10 +1,10 @@
 package com.example.companyproject.dao;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+        import javax.validation.constraints.NotNull;
 
-import com.example.companyproject.services.Company;
-import lombok.Data;
+        import com.example.companyproject.services.Company;
+        import lombok.Data;
 
 @Data
 @Entity
@@ -32,5 +32,4 @@ public class CompanyEntity {
         this.data = pojo.getData();
         return this;
     }
-
 }
